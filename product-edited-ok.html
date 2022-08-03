@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Narices Frias - Producto Editado</title>
+</head>
+<body>
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav-logo">Narices Frias</a>
+        <a href="index.html"><img src="img/Logo.svg" alt="Logo" width="40.82px" height="29.17px"></a>
+        <div class="header-search">
+            <input class="header-input--search" id="search" type="text" name="input-search" placeholder="¿Qué deseas buscar?">
+            <i class="fa fa-magnifying-glass header-lens"></i>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list grid">
+            <li class="nav-item">
+            <a href="#home" class="nav-link">
+                <i class="bi bi-house nav-icon"></i>
+                Inicio
+            </a>
+            </li>
+            <li class="nav-item">
+            <a href="#categories" class="nav-link">
+                <i class="bi bi-person nav-icon"></i>
+                Categorias
+            </a>
+            </li>
+            <li class="nav-item">
+            <a href="#contact" class="nav-link">
+                <i class="bi bi-send nav-icon"></i>
+                Contacto
+            </a>
+            </li>
+        </ul>
+        <i class="bi bi-x-lg nav-close" id="nav-close"></i>
+        </div>
+        <div class="nav-btn">
+        <!-- BOTON PARA CAMBIAR DE MODO CLARO A MODO OSCURO -->
+        <i class="bi bi-moon dark-mode" id="dark-button"></i>
+    
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="add-product">
+        <div class="container">
+            <div class="card">
+                <i class="fa fa-clipboard-check"></i>
+                <h2 class="title">Producto editado con éxito</h2>
+                <a class="button" href="all-products.html">Regresar</a>
+            </div>
+        </div>
+    </section>
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contacto</h2>
+    <span class="section-subtitle">Creemos algo juntos</span>
+
+    <div class="contact-container container grid">
+    <form action="" class="contact-form">
+        <div class="contact-content">
+        <label for="name" class="contact-label">Nombre</label>
+        <input type="text" name="name" class="contact-input" required pattern="[\s\S]{6,25}" minlength="6" maxlength="25" data-tipo="nombre" placeholder="━">
+        <span class="error-message"></span>
+        </div>
+        <div class="contact-content">
+        <label for="email" class="contact-label">Email</label>
+        <input type="email" name="email" class="contact-input" required data-tipo="email" placeholder="━">
+        <span class="error-message"></span>
+        </div>
+        <div class="contact-content">
+        <label for="asunto" class="contact-label">Asunto</label>
+        <input type="text" name="asunto" class="contact-input" required pattern="[\s\S]{10,40}" minlength="10" maxlength="40" data-tipo="asunto" placeholder="━">
+        <span class="error-message"></span>
+        </div>
+        <div class="contact-content">
+        <label for="mensaje" class="contact-label">Mensaje</label>
+        <textarea
+            name="mensaje"
+            cols="0"
+            rows="10"
+            class="contact-input"
+            required
+            pattern="[\s\S]{20,200}" 
+            minlength="20"
+            maxlength="200"
+            data-tipo="mensaje"
+            id="textarea"
+            placeholder="━">
+        </textarea>
+        <span class="error-message"></span>
+        </div>
+
+        <input type="submit" value="Enviar Mensaje" class="contact-btn button"/>
+    </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-bg">
+    <div class="footer-container container grid">
+        <div>
+        <h1 class="footer-title">Narices Frias</h1>
+        <span class="footer-subtitle">PetShop</span>
+        </div>
+        
+        <ul class="footer-links">
+        <li>
+            <a href="#home" class="footer-link">Inicio</a>
+        </li>
+        <li>
+            <a href="#contact" class="footer-link">Contacto</a>
+        </li>
+        </ul>
+        
+        <div class="footer-socials">
+        <link rel="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" class="footer-social">
+            <i class="bi bi-linkedin"></i>
+        <link rel="https://github.com/lunabianchib" target="_blank" class="footer-social">
+            <i class="bi bi-github"></i>
+        <link rel="https://www.instagram.com/luna_bianchib/" target="_blank" class="footer-social">
+            <i class="bi bi-instagram"></i>
+        
+            <link rel="https://lunabianchib.github.io" target="_blank" class="footer-social" aria-labelledby="portfolio">
+            <i class="icon-logo"></i>
+            <p id="portfolio">
+                <h4>Desarrollado por Luna Bianchi Borches | 2022. Todos los derechos reservados.</h4>
+                <span class="">Ver Portfolio</span>
+            </p>
+        </div>
+        </div>
+    </div>
+    </footer>
+</main>
+<!-- SCROLL REVEAL -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- MAIN JS -->
+<script src="main.js"></script>
+<!-- CONTACT VALIDATION -->
+<script src="app.js" type="module"></script>
+<!-- APARTE -->
+<script src="app2.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous"></script>
+<script src="form-submited-controller.js"></script>
+</body>
+</html>
